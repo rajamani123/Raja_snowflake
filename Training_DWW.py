@@ -1,6 +1,4 @@
 import streamlit
-
-
 streamlit.title('my parents new healthy dinner')
 streamlit.header('Breakfast Menu')
 streamlit.text('Omega3 & Blueberry Oatmeal')
@@ -15,4 +13,5 @@ streamlit.dataframe(my_fruit_list)
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 my_fruit_list = my_fruit_list.set_index('Fruit')
-my_breakfast_list = my_breakfast_list.set_index('breakfast')
+
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries']
